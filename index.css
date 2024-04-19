@@ -1,9 +1,7 @@
+
 body{
     background-image: url('/img/wallpaper-home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-
-    color: var(--bs-light);
-    background-color: var(--bs-light);
+    background-position: absolute;
 }

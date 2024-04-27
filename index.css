@@ -1,7 +1,27 @@
 
-body{
-    background-image: url('/img/wallpaper-home.jpg');
+/* Background */
+.body-home{
+    background-image: url('img/bg-home.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: absolute;
+}
+/* Navbar */
+.nav{
+    margin: 4vh;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+/* Home */
+.container{
+    margin-top: 10%;
+}
+.subtitle{
+    color: white;
+}
+.title{
+    color: white;
 }

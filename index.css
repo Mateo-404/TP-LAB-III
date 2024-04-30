@@ -7,19 +7,20 @@
 .body-home{
     background-image: url('img/bg-home.webp');
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: absolute;
-    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
 }
 /* Navbar */
 .nav{
+    display: flexbox;
+    justify-content: flex-end;
     margin: 4vh;
 }
 .nav-link{
     color: blanchedalmond !important; /*Sobreescribir lo de Boostrap*/
     text-decoration: none;
 }
-
 /* Home */
 .container{
     margin-top: 10%;
@@ -34,11 +35,16 @@
     font-size: 350%;
     color: white;
 }
-p{
+.parrafo-home{
     text-shadow: 2px 2px 4px #000000;
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-size: 120%;
     font-style: italic;
     color: white !important;
+}
+/*Formulario*/
+#enviar_form{
+    display: flex;
+    justify-content: center;
 }

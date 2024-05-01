@@ -3,17 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Libre Baskerville */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 /* Background */
-.body-home{
-    background-image: url('img/bg-home.webp');
+body{
     background-repeat: no-repeat;
     background-position: absolute;
     background-attachment: fixed;
     background-size: cover;
 }
+#body-home{
+    background-image: url('img/bg-home.webp');
+}
+#body-news{
+    background-image: url('img/bg-news.webp');
+}
+#body-register{
+    background-image: url('img/bg-register.webp');
+}
 /* Navbar */
 .nav{
-    display: flexbox;
+    display: flex;
     justify-content: flex-end;
     margin: 4vh;
 }
@@ -22,16 +33,17 @@
     text-decoration: none;
 }
 /* Home */
-.container{
+.container-home{
     margin-top: 10%;
 }
 .subtitle{
     font-size: 230%;
-    text-shadow: .6px .6px .4px #000000;
-    color: yellowgreen;
+    text-shadow: rgba(0, 0, 0, .7) 1px 1px 1px;
+    color: rgb(67, 175, 94);
 }
 .title{
     font-family: 'Roboto', sans-serif;
+    text-shadow: rgba(0, 0, 0, .7) 1px 3px 2px;
     font-size: 350%;
     color: white;
 }
@@ -43,7 +55,45 @@
     font-style: italic;
     color: white !important;
 }
+/*Noticias*/
+.noticias{
+    padding-top: 4%;
+}
+.container-news{
+    margin-top: 6%;
+}
+.card{
+    border-radius: 100%;
+    box-shadow: white;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+    transform: translateY(-3%);
+
+}
+.card-title{
+    font-family: 'Oswald', sans-serif;    
+    font-size: 150%;
+    text-align: center;
+}
+.card-text{
+    font-family: 'Roboto', sans-serif;	
+    font-size: 99%;
+    text-align: center;
+}
+.btn-noticia{
+    display: flex;
+    justify-content: center;
+}
+.btn-success{
+    font-weight: 600 !important;
+}
 /*Formulario*/
+.formulario{
+    padding-left: 12% !important;
+    padding-right: 12% !important;
+}
 #enviar_form{
     display: flex;
     justify-content: center;

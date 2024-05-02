@@ -19,6 +19,12 @@ body{
 #body-news{
     background-image: url('img/bg-news.webp');
 }
+#body-about{
+    background-image: url('img/bg-about.webp');
+}
+#body-contact{
+    background-image: url('img/bg-contact.webp');
+}
 #body-register{
     background-image: url('img/bg-register.webp');
 }
@@ -29,21 +35,28 @@ body{
     margin: 4vh;
 }
 .nav-link{
-    color: blanchedalmond !important; /*Sobreescribir lo de Boostrap*/
+    color: rgb(255, 255, 255) !important; /*Sobreescribir lo de Boostrap*/
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 /* Home */
 .container-home{
     margin-top: 10%;
 }
+.container-home img{
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(80deg) brightness(200%) contrast(100%);
+    width: 6%;
+}
 .subtitle{
+    font-family: 'Oswald', sans-serif;
     font-size: 230%;
-    text-shadow: rgba(0, 0, 0, .7) 1px 1px 1px;
+    text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
     color: rgb(67, 175, 94);
 }
 .title{
     font-family: 'Roboto', sans-serif;
-    text-shadow: rgba(0, 0, 0, .7) 1px 3px 2px;
+    text-shadow: rgba(0, 0, 0, .4) 1px 3px 2px;
+    font-weight: bolder;
     font-size: 350%;
     color: white;
 }
@@ -57,21 +70,20 @@ body{
 }
 /*Noticias*/
 .noticias{
-    padding-top: 4%;
-}
-.container-news{
-    margin-top: 6%;
+    padding-top: 2%;
 }
 .card{
     border-radius: 100%;
     box-shadow: white;
     transition: all 400ms ease;
+    background-color: rgba(255, 255, 255, .6) !important;
 }
 .card:hover{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
     transform: translateY(-3%);
 
 }
+
 .card-title{
     font-family: 'Oswald', sans-serif;    
     font-size: 150%;
@@ -82,17 +94,73 @@ body{
     font-size: 99%;
     text-align: center;
 }
-.btn-noticia{
-    display: flex;
-    justify-content: center;
-}
+
 .btn-success{
     font-weight: 600 !important;
 }
+/*Visitanos*/
+.container-about{
+    text-align: center;
+}
+.introduccion-about{
+    margin-top: 4%;
+    background-color: rgba(255, 255, 255, .05);
+    padding: 4%;
+}
+.introduccion-about img{
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(80deg) brightness(200%) contrast(100%);
+    width: 40%;
+}
+.container-about h3{
+    color: white;
+    text-align: start;
+    margin: 5% 10% 1% 10%;
+    font-family: 'Oswald', sans-serif;
+}
+.introduccion-about h4{
+    margin-top: 8% !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+    color: white;
+}
+.subtitle-secondary{
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 130%;
+    color: #97A483;
+}
+.title-secondary{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: -1%;
+    font-weight: bolder;
+    color: aliceblue;
+}
+#parragraph-about{
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    color: beige;
+    margin: 2% 0% 0% 0%;
+}
+#carouselExampleCaptions{
+    margin: 0% 10% 3% 10% !important;
+    box-shadow: 3px 1px 17px rgba(255, 255, 255, .05);
+}
 /*Formulario*/
-.formulario{
-    padding-left: 12% !important;
-    padding-right: 12% !important;
+.container-formulario{
+    background-color: rgba(255, 255, 255, .7);
+    margin: 0% 20% 0% 20% !important;
+    box-shadow: 3px 1px 17px rgba(0, 0, 0, .4);
+    padding: 1.3% 2% 0.7% 2% !important;   
+}
+.container-formulario label{
+    font-family: 'Roboto', sans-serif;
+    font-size: smaller;
+    font-weight: bolder;
+}
+#subtitle-register{
+    margin-bottom: 1.7%;
 }
 #enviar_form{
     display: flex;

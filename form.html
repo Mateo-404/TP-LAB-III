@@ -41,7 +41,7 @@
     <section>
       <div class="container-formulario">
         <h2 id="subtitle-register">Asociate</h2>
-        <form action="guardarDatos" method="post" id="formulario-form" onsubmit="comprobarFormulario(event)" novalidate>
+        <form action="/form_complete.html" method="post" id="formulario" novalidate>
           <div class="row row-col-2">
             <div class="col mb-3">
               <label for="nombre" class="form-label">Nombre</label>
@@ -70,7 +70,7 @@
             <label class="form-check-label" for="aceptar_terminos_condiciones">Acepto términos y condiciones</label>
           </div>
           <div class="mb-3" id="enviar_form">
-            <button type="submit" class="btn btn-success" id="submit">Enviar</button>
+            <button type="submit" class="btn btn-success" onclick="comprobarFormulario()" id="enviar_form">Enviar</button>
           </div>
         </form>
       </div>

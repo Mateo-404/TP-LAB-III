@@ -1,4 +1,7 @@
 function comprobarFormulario() {
+
+    event.preventDefault();
+
     let flag = true;
     let error = 'Surgieron los siguentes errores: \n';
     
@@ -8,7 +11,6 @@ function comprobarFormulario() {
     const fecha_nacimiento = document.getElementById('fecha_nacimiento').value;
     const email = document.getElementById('email').value;
 
-    //                      <-- VALIDACIÓN DE DATOS -->
     // Validación nombre
     if (nombre == '') {
         error += '- FALTA RELLENAR EL NOMBRE \n';
@@ -20,29 +22,21 @@ function comprobarFormulario() {
         flag = false;
     }
     // Validación telefono
-    switch (telefono) {
-        case '':            
-            error += '- FALTA RELLENAR EL TELÉFONO \n';
-            flag = false;
-            break;
-        case (telefono.length < 10):
-            error += '- TELÉFONO INVÁLIDO \n';
-        default:
-            break;
+    if (telefono == '') {
+        error += '- FALTA RELLENAR EL TELÉFONO \n';
+        flag = false;
+    }else if (telefono.length < 10) {
+        error += '- TELÉFONO INVÁLIDO \n';
+        flag = false;
     }
+
     // Validación fecha de nacimiento
-    switch (fecha_nacimiento) {
-        case calcularMayoriaEdad(fecha_nacimiento):
-            error+= '- LA PERSONA DEBE DE SER MAYOR DE EDAD \n';
-            flag = false;
-            break;
-    
-        case '':
-            error += '- FALTA RELLENAR LA FECHA DE NACIMIENTO \n';
-            flag = false;
-            break;
-        default:
-            break;
+    if (fecha_nacimiento === '') {
+        error += '- FALTA RELLENAR LA FECHA DE NACIMIENTO \n';
+        flag = false;
+    }else if (calcularMayoriaEdad(fecha_nacimiento) === true) {
+        error += '- LA PERSONA DEBE DE SER MAYOR DE EDAD \n';
+        flag = false;
     }
     // Validación email
     if (email == '') {
@@ -55,12 +49,7 @@ function comprobarFormulario() {
         flag = false;
     }
 
-    //                      <-- ENVIAR O DENEGAR FORMULARIO -->
-    if (flag) {
-        return document.getElementById('formulario-form').submit();
-    } else {
-        return alert(error);
-    }
+    flag ? document.getElementById('formulario').submit() : alert(error);
 }
 
 function calcularMayoriaEdad(fecha_nacimiento) {

@@ -31,6 +31,9 @@ body{
 #body-form{
     background-image: url('img/bg-form.webp');
 }
+#body-form-complete{
+    background-image: url('img/bg-form-complete.webp');
+}
 
 /* <-- NavBar --> */
 .nav{
@@ -239,4 +242,43 @@ footer iframe{
     font-size: 120%;
     font-weight: bolder;
     text-align: center;
+}
+
+/* <-- Formulario enviado / Form_complete --> */
+#body-form-complete .title-secondary{
+    margin-top: 3%;
+}
+
+#body-form-complete .subtitle-secondary{
+    margin-top: -0.3%;
+}
+
+#card-form-complete{
+    margin: 2% 6% 0% 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(160, 156, 156, 0.411) !important;
+}
+#card-form-complete:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
+    transform: translateY(0%);
+}
+
+#card-form-complete p{
+    padding: 5% 5% 5% 5%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 200%;
+    font-weight: 900;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0% -5% 0% -5%;
+    background-color: rgba(0, 0, 0, 0.096);
+}
+
+
+#body-form-complete img{
+    padding: 2% 0% 0% 2%;
+    width: 50%;
 }

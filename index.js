@@ -8,6 +8,7 @@ function comprobarFormulario() {
     const fecha_nacimiento = document.getElementById('fecha_nacimiento').value;
     const email = document.getElementById('email').value;
 
+    //                      <-- VALIDACIÓN DE DATOS -->
     // Validación nombre
     if (nombre == '') {
         error += '- FALTA RELLENAR EL NOMBRE \n';
@@ -54,8 +55,11 @@ function comprobarFormulario() {
         flag = false;
     }
 
-    if (!flag) {
-        alert(error);
+    //                      <-- ENVIAR O DENEGAR FORMULARIO -->
+    if (flag) {
+        return document.getElementById('formulario-form').submit();
+    } else {
+        return alert(error);
     }
 }
 

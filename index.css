@@ -6,7 +6,10 @@
 /*Oswald */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-/* Background */
+
+/* ---------------- CLASES GLOBALES ---------------- */
+
+/* <-- Background --> */
 body{
     background-repeat: no-repeat;
     background-position: absolute;
@@ -28,31 +31,20 @@ body{
 #body-form{
     background-image: url('img/bg-form.webp');
 }
-/* Navbar */
+
+/* <-- NavBar --> */
 .nav{
     display: flex;
-    justify-content: flex-end;
-    margin: 4vh;
+    justify-content: end;
+    margin: 1% 3% 0% 0%;
 }
 .nav-link{
-    color: rgb(255, 255, 255) !important; /*Sobreescribir lo de Boostrap*/
+    color: rgb(255, 255, 255) !important; /* Sobreescribir lo de Boostrap */
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
-/* Home */
-.container-home h2{
-    margin-top: 12%;
-}
-.container-home img{
-    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(80deg) brightness(200%) contrast(100%);
-    width: 6%;
-}
-.subtitle{
-    font-family: 'Oswald', sans-serif;
-    font-size: 230%;
-    text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
-    color: rgb(67, 175, 94);
-}
+
+/* <-- Titulos y Subtitulos / Title & Subtitle --> */
 .title{
     font-family: 'Roboto', sans-serif;
     text-shadow: rgba(0, 0, 0, .4) 1px 3px 2px;
@@ -60,18 +52,28 @@ body{
     font-size: 350%;
     color: white;
 }
-.parrafo-home{
-    text-shadow: 2px 2px 4px #000000;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-size: 120%;
-    font-style: italic;
-    color: white !important;
+.title-secondary{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: -1%;
+    font-weight: bolder;
+    color: aliceblue;
 }
-/*Noticias*/
-.noticias{
-    padding: 2% 2% 2% 2%!important;
+.subtitle{
+    font-family: 'Oswald', sans-serif;
+    font-size: 230%;
+    text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
+    color: rgb(67, 175, 94);
 }
+.subtitle-secondary{
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 130%;
+    color: #97A483;
+}
+
+/* <-- Cartas / Cards --> */
 .card{
     border-radius: 100%;
     box-shadow: white;
@@ -81,26 +83,84 @@ body{
 .card:hover{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
     transform: translateY(-3%);
-
 }
 
-.card-title{
-    font-family: 'Oswald', sans-serif;    
-    font-size: 150%;
-    text-align: center;
-}
-.card-text{
-    font-family: 'Roboto', sans-serif;	
-    font-size: 99%;
-    text-align: center;
-}
-
+/* <-- Botones / Btn --> */
 .btn-success{
     display: flex !important;
     justify-content: center !important;
     font-weight: 600 !important;
 }
-/*Visitanos*/
+
+/* <-- Footer --> */
+footer{
+    border-top: white 0.1px solid;
+    background-color: #272727;
+    padding: 2%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    font-family: 'Roboto', sans-serif;
+    margin-top: -3%;
+    color: rgb(67, 175, 94);
+    text-align: center;
+}
+.title-footer{
+    margin-top: 3%;
+    font-size: 140%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+footer iframe{
+   box-shadow: white 0px 0px 5px;
+}
+
+
+/* ---------------- SECCIONES PARTICULARES / Sections ---------------- */
+
+/* <-- Home / Index -->*/
+.container-home h2{
+    margin-top: 12%;
+}
+.container-home img{
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(80deg) brightness(200%) contrast(100%);
+    width: 6%;
+}
+#parrafo-home{
+    text-shadow: 2px 2px 4px #000000;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-size: 120%;
+    font-style: italic;
+    color: white !important;
+}
+
+/*<-- Noticias / News -->*/
+.noticias{
+    padding: 2% 2% 2% 2%!important;
+}
+.noticias .col{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+/* Cartas / Cards */
+#card-title{
+    font-family: 'Oswald', sans-serif;    
+    font-size: 150%;
+    text-align: center;
+}
+#card-text{
+    font-family: 'Roboto', sans-serif;	
+    font-size: 99%;
+    text-align: center;
+}
+
+
+/* <-- Sobre Nosotros / About -->*/
 .container-about{
     text-align: center;
 }
@@ -113,6 +173,7 @@ body{
     filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(80deg) brightness(200%) contrast(100%);
     width: 40%;
 }
+
 .container-about h3{
     color: white;
     text-align: start;
@@ -125,20 +186,6 @@ body{
     font-size: 120%;
     color: white;
 }
-.subtitle-secondary{
-    margin-top: 2%;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 130%;
-    color: #97A483;
-}
-.title-secondary{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    margin-top: -1%;
-    font-weight: bolder;
-    color: aliceblue;
-}
 #parragraph-about{
     font-family: 'Roboto', sans-serif;
     font-size: small;
@@ -149,10 +196,11 @@ body{
     margin: 0% 10% 3% 10% !important;
     box-shadow: 3px 1px 17px rgba(255, 255, 255, .05);
 }
-/*Formulario*/
+
+/* <-- Formulario / Form -->*/
 .container-formulario{
     background-color: rgba(255, 255, 255, 0.338);
-    margin: 0% 20% 0% 20% !important;
+    margin: 1% 20% 0% 20% !important;
     box-shadow: 3px 1px 17px rgba(0, 0, 0, .4);
     padding: 1.3% 2% 0.7% 2% !important;   
 }
@@ -172,11 +220,15 @@ body{
     display: flex;
     justify-content: center;
 }
-/*Contacto*/
-.contact-card img{
-    padding: 6%;
+
+/*<-- Contacto / Contact -->*/
+.contact-card .col{
+    margin-bottom: 3%;
     display: flex;
     justify-content: center;
+}
+.contact-card img{
+    padding: 6%;
 }
 .contact-card a{
     display: flex;

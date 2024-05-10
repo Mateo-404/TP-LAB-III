@@ -14,9 +14,9 @@
 </head>
 
 <body id="body-form">
-  <div class="container">
-    <!--NavBar -->
+  <div class="container-md">
     <header>
+      <!--NavBar -->
       <nav>
         <ul class="nav sticky-top">
           <li class="nav-item">
@@ -41,7 +41,7 @@
     <section>
       <div class="container-formulario">
         <h2 id="subtitle-register">Asociate</h2>
-        <form action="guardarDatos" method="post" id="formulario-form">
+        <form action="guardarDatos" method="post" id="formulario-form" onsubmit="comprobarFormulario(event)" novalidate>
           <div class="row row-col-2">
             <div class="col mb-3">
               <label for="nombre" class="form-label">Nombre</label>
@@ -70,12 +70,31 @@
             <label class="form-check-label" for="aceptar_terminos_condiciones">Acepto términos y condiciones</label>
           </div>
           <div class="mb-3" id="enviar_form">
-            <button type="submit" class="btn btn-success" onclick="comprobarFormulario()">Enviar</button>
+            <button type="submit" class="btn btn-success" id="submit">Enviar</button>
           </div>
         </form>
       </div>
     </section>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <address>
+            <p class="title-footer">Dirección</p>
+            <p>Bv. Sta. Fe 302, Rafaela, Santa Fe, Argentina</p>
+          </address>
+          <p class="title-footer">Developer</p>
+          <a href="https://mateogariboglio.sytes.net" target="_blank" style="text-decoration: none;"><p>Mateo Gariboglio</p></a>
+        </div>
+        <div class="col-md">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5206.439647565907!2d-61.46104522517521!3d-31.26039121406906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae48724ba239%3A0x2ad6788817d82153!2sJockey%20Club%20de%20Rafaela!5e0!3m2!1ses-419!2sus!4v1715231984737!5m2!1ses-419!2sus" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- Import Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

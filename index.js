@@ -42,6 +42,9 @@ function comprobarFormulario() {
     if (email == '') {
         error += '- FALTA RELLENAR EL EMAIL \n';
         flag = false;
+    }else if (!email.includes('@')) {
+        error += '- EMAIL INVÁLIDO \n';
+        flag = false;
     }
     // Validación aceptar terminos y condiciones
     if (!document.getElementById('aceptar_terminos_condiciones').checked) {
@@ -49,7 +52,11 @@ function comprobarFormulario() {
         flag = false;
     }
 
-    flag ? document.getElementById('formulario').submit() : alert(error);
+    // Enviar formulario
+    if (flag){
+        alert('¡FORMULARIO ENVIADO CON ÉXITO!');
+        document.getElementById('formulario').submit()
+    }else alert(error);
 }
 
 function calcularMayoriaEdad(fecha_nacimiento) {

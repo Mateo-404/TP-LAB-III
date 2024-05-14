@@ -40,7 +40,7 @@
     <!--Formulario-->
     <section>
       <div class="container-formulario">
-        <h2 id="subtitle-register">Asociate</h2>
+        <h2 id="subtitle-form">Asociate</h2>
         <form action="form_complete.html" method="post" id="formulario" novalidate>
           <div class="row row-col-2">
             <div class="col mb-3">
@@ -58,7 +58,7 @@
           </div>
           <div class="mb-3">
             <label for="fecha_nacimiento" class="form-label">Fecha de Nacimiento</label>
-            <input type="date" class="form-control" name="fecha_nacimiento" id="fecha_nacimiento">
+            <input type="date" class="form-control" name="fecha_nacimiento" id="fecha_nacimiento" min="1899-01-01" max="today">
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
@@ -95,7 +95,12 @@
       </div>
     </div>
   </footer>
-  <!-- Import Bootstrap-->
+  <!-- Script -->
+  <!-- Regular el atributo maximo de fecha a hoy -->
+  <script>
+    document.getElementById("fecha_nacimiento").max = new Date().toISOString().split("T")[0];
+  </script>
+  <!-- Import Bootstrap y js-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
   crossorigin="anonymous"></script>

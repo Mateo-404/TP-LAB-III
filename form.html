@@ -21,7 +21,7 @@
       <header>
         <!--NavBar -->
         <nav>
-          <ul class="nav sticky-top">
+          <ul class="nav sticky-top navbar-expand">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
@@ -42,7 +42,7 @@
       </header>
       <!--Formulario-->
       <section>
-        <div class="container-formulario">
+        <div class="container-md container-formulario">
           <h2 id="subtitle-form">Asociate</h2>
           <form
             action="form_complete.html"
@@ -50,7 +50,7 @@
             id="formulario"
             novalidate
           >
-            <div class="row row-col-2">
+            <div class="row">
               <!-- Nombre -->
               <div class="col mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
@@ -75,63 +75,77 @@
               </div>
             </div>
             <!-- Teléfono -->
-            <div class="mb-3">
-              <label for="telefono" class="form-label">Teléfono</label>
-              <input
-                type="tel"
-                class="form-control"
-                name="telefono"
-                id="telefono"
-                placeholder="+54 342456789"
-              />
+            <div class="row mb-3">
+              <div class="col">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="telefono"
+                  id="telefono"
+                  placeholder="+54 342456789"
+                />
+              </div>
             </div>
             <!-- Fecha de Nacimiento -->
-            <div class="mb-3">
-              <label for="fecha_nacimiento" class="form-label"
-                >Fecha de Nacimiento</label
-              >
-              <input
-                type="date"
-                class="form-control"
-                name="fecha_nacimiento"
-                id="fecha_nacimiento"
-                min="1899-01-01"
-                max="today"
-              />
+            <div class="row mb-3">
+              <div class="col">
+                <label for="fecha_nacimiento" class="form-label"
+                  >Fecha de Nacimiento</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  name="fecha_nacimiento"
+                  id="fecha_nacimiento"
+                  min="1899-01-01"
+                  max="today"
+                />
+              </div>
             </div>
             <!-- Email -->
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                name="email"
-                id="email"
-                placeholder="correo@ejemplo.com"
-              />
+            <div class="row mb-3">
+              <div class="col">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="correo@ejemplo.com"
+                />
+              </div>
             </div>
             <!-- Aceptar Términos y Condiciones -->
-            <div class="mb-3 form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="aceptar_terminos_condiciones"
-                name="aceptar_terminos_condiciones"
-              />
-              <label class="form-check-label" for="aceptar_terminos_condiciones"
-                >Acepto términos y condiciones</label
-              >
+            <div class="row">
+              <div class="col">
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="aceptar_terminos_condiciones"
+                    name="aceptar_terminos_condiciones"
+                  />
+                  <label class="form-check-label" for="aceptar_terminos_condiciones"
+                    >Acepto términos y condiciones</label
+                  >
+                </div>
+              </div>
             </div>
             <!-- Enviar Formulario -->
-            <div class="mb-3" id="enviar_form">
-              <button
-                type="submit"
-                class="btn btn-success"
-                onclick="comprobarFormulario()"
-                id="enviar_form"
-              >
-                Enviar
-              </button>
+            <div class="row">
+              <div class="col">
+                <div class="mb-3" id="enviar_form">
+                  <button
+                    type="submit"
+                    class="btn btn-success"
+                    onclick="comprobarFormulario()"
+                    id="enviar_form"
+                  >
+                    Enviar
+                  </button>
+                </div>
+              </div>
             </div>
           </form>
         </div>
@@ -140,9 +154,9 @@
 
     <!-- Footer -->
     <footer>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md">
+          <div class="col">
             <address>
               <p class="title-footer">Dirección</p>
               <p>Bv. Sta. Fe 302, Rafaela, Santa Fe, Argentina</p>
@@ -155,7 +169,7 @@
               ><p>Mateo Gariboglio</p></a
             >
           </div>
-          <div class="col-md">
+          <div class="col">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5206.439647565907!2d-61.46104522517521!3d-31.26039121406906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae48724ba239%3A0x2ad6788817d82153!2sJockey%20Club%20de%20Rafaela!5e0!3m2!1ses-419!2sus!4v1715231984737!5m2!1ses-419!2sus"
               width="600"

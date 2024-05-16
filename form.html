@@ -42,8 +42,8 @@
       </header>
       <!--Formulario-->
       <section>
-        <div class="container-md container-formulario">
-          <h2 id="subtitle-form">Asociate</h2>
+        <div class="container container-formulario">
+          <h1 id="subtitle-form">Asociate</h1>
           <form
             action="form_complete.html"
             method="post"
@@ -52,7 +52,7 @@
           >
             <div class="row">
               <!-- Nombre -->
-              <div class="col mb-3">
+              <div class="col input">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input
                   type="text"
@@ -63,7 +63,7 @@
                 />
               </div>
               <!-- Apellido -->
-              <div class="col mb-3">
+              <div class="col input">
                 <label for="apellidos" class="form-label">Apellidos</label>
                 <input
                   type="text"
@@ -75,7 +75,7 @@
               </div>
             </div>
             <!-- Teléfono -->
-            <div class="row mb-3">
+            <div class="row input">
               <div class="col">
                 <label for="telefono" class="form-label">Teléfono</label>
                 <input
@@ -88,7 +88,7 @@
               </div>
             </div>
             <!-- Fecha de Nacimiento -->
-            <div class="row mb-3">
+            <div class="row input">
               <div class="col">
                 <label for="fecha_nacimiento" class="form-label"
                   >Fecha de Nacimiento</label
@@ -104,7 +104,7 @@
               </div>
             </div>
             <!-- Email -->
-            <div class="row mb-3">
+            <div class="row input">
               <div class="col">
                 <label for="email" class="form-label">Email</label>
                 <input
@@ -119,7 +119,7 @@
             <!-- Aceptar Términos y Condiciones -->
             <div class="row">
               <div class="col">
-                <div class="mb-3 form-check">
+                <div class="input form-check">
                   <input
                     type="checkbox"
                     class="form-check-input"
@@ -135,7 +135,7 @@
             <!-- Enviar Formulario -->
             <div class="row">
               <div class="col">
-                <div class="mb-3" id="enviar_form">
+                <div class="input" id="enviar_form">
                   <button
                     type="submit"
                     class="btn btn-success"
@@ -186,6 +186,7 @@
     <!-- Script -->
     <!-- Regular el atributo maximo de fecha a hoy -->
     <script>
+      //Se toma la fecha del form, se crea la fecha actual y se convierte a string, para quitarle la hora
       document.getElementById("fecha_nacimiento").max = new Date()
         .toISOString()
         .split("T")[0];

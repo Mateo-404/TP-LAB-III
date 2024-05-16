@@ -33,7 +33,7 @@ function comprobarFormulario() {
   if (fecha_nacimiento === "") {
     error += "- FALTA RELLENAR LA FECHA DE NACIMIENTO \n";
     flag = false;
-  } else if (calcularMayoriaEdad(fecha_nacimiento) === true) {
+  } else if (esMenorEdad(fecha_nacimiento)) {
     error += "- LA PERSONA DEBE DE SER MAYOR DE EDAD \n";
     flag = false;
   }
@@ -58,12 +58,14 @@ function comprobarFormulario() {
   } else alert(error);
 }
 
-function calcularMayoriaEdad(fecha_nacimiento) {
+function esMenorEdad(fecha_nacimiento) {
   const anios =
+  //Año actual - año de nacimiento
     new Date().getFullYear() - new Date(fecha_nacimiento).getFullYear();
   return (
     anios < 18 ||
     (anios === 18 &&
+      //Mes actual < mes de nacimiento
       new Date().getMonth() + 1 < fecha_nacimiento.substring(5, 7))
   );
 }

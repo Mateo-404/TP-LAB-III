@@ -60,6 +60,7 @@ function comprobarFormulario() {
 
 function calcularMayoriaEdad(fecha_nacimiento) {
   const anios =
+    //Año actual - Año de nacimiento
     new Date().getFullYear() - new Date(fecha_nacimiento).getFullYear();
   return (
     anios < 18 ||

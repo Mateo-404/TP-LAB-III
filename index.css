@@ -44,6 +44,25 @@ body {
   text-decoration: none;
 }
 
+/* Animacion 1 */
+.navbar-nav .nav-link {
+  position: relative;
+}
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Alinea la línea justo debajo del texto */
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease; /* Animación de la anchura */
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* Expande la línea al 100% del ancho del texto */
+}
+
 /* <-- Titulos y Subtitulos / Title & Subtitle --> */
 .title {
   font-family: "Roboto", sans-serif;
@@ -80,6 +99,12 @@ body {
   transition: all 400ms ease;
   background-color: rgba(255, 255, 255, 0.6) !important;
 }
+.card .card-img-top {
+  flex-shrink: 0; /* Evitar que la imagen encoja con la tarjeta */
+  height: 200px; /* Altura fija para la imagen, ajusta según tus necesidades */
+  object-fit: cover; /* Ajustar imagen dentro de su contenedor */
+}
+/* Animacion 2 */
 .card:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
@@ -120,24 +145,6 @@ footer iframe {
   width: 100%;
 }
 
-/* ---------------- MEDIA QUERIES ---------------- */
-@media (min-width: 576px) {
-  nav ul {
-    display: flex !important;
-    justify-content: end !important;
-  }
-}
-@media (max-width: 800px) {
-  .container-formulario .row{
-    margin-top: 8%;
-  }
-  
-}
-@media (max-width: 1000px) {
-  footer {
-    margin-top: 100%;
-  }
-}
 
 /* ---------------- SECCIONES PARTICULARES / Sections ---------------- */
 
@@ -145,9 +152,10 @@ footer iframe {
 .container-home h2 {
   margin-top: 12%;
 }
+/* Animacion 3 */
 .container-home img {
   filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(80deg)
-    brightness(200%) contrast(100%);
+  brightness(200%) contrast(100%);
   transition: transform 0.5s ease;
   width: 6%;
 }
@@ -171,15 +179,16 @@ footer iframe {
   display: flex !important;
   justify-content: center !important;
   margin-bottom: 3%;
+  animation: slideInTop 1s;
 }
 
 /* Cartas / Cards */
-#card-title {
+.card-title {
   font-family: "Oswald", sans-serif;
   font-size: 150%;
   text-align: center;
 }
-#card-text {
+.card-text {
   font-family: "Roboto", sans-serif;
   font-size: 99%;
   text-align: center;
@@ -196,10 +205,11 @@ footer iframe {
 }
 .introduccion-about img {
   filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(80deg)
-    brightness(200%) contrast(100%);
+  brightness(200%) contrast(100%);
   transition: transform 0.5s ease;
   width: 40%;
 }
+/* Animacion 4 */
 .introduccion-about img:hover {
   transform: scale(1.3);
 }
@@ -316,3 +326,38 @@ input[type="checkbox"]:checked {
   padding: 2% 0% 0% 2%;
   width: 50%;
 }
+
+
+/* <-- Animaciones con Keyframes -->*/
+/* Animacion 5 FadeIn */
+.fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Animacion 6 SlideITop */
+@keyframes slideInTop {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+
+
+
+/* ---------------- MEDIA QUERIES ---------------- */
+@media (max-width: 800px) {
+  .container-formulario .row{
+    margin-top: 8%;
+  }
+  
+}
+@media (max-width: 1000px) {
+  footer {
+    margin-top: 100%;
+  }
+}
+

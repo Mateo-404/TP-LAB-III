@@ -20,3 +20,12 @@ Además, se deben utilizar los conocimientos adquiridos durante las clases para 
 - [Asociarse (hacer formulario)](/form.html)
 - [Fotos (Visitanos)](/about.html)
 - [Contacto](/contact.html)
+
+## Consignas para el Final
++ Menú desplegable ( botón con desplegable ) sólo para versión celular.
++ Debe tener una sección de productos que debe cargarse desde un archivo JSON / AJAX. El archivo 
+puede ser un archivo fijo o puede ser generado por algún servicio.
++ Incorporar efectos de animación con javascript / ccs en diferentes secciones del sitio web. Mínimo 
+10 selectores y animaciones en diferentes HTMLs del sitio Web.
++ En la mesa de examen, se entregará el proyecto, y deberá ser defendido. La nota se obtendrá del 
+trabajo presentado y de la defensa del mismo.

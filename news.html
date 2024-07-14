@@ -20,212 +20,69 @@
     <div class="container">
       <header>
         <!--NavBar -->
-        <nav>
-          <ul class="nav sticky-top  navbar-expand">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-light" href="#">Noticias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Visitanos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="form.html">Asociarme</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contacto</a>
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-md sticky-top">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarOffcanvas"
+              aria-controls="navbarOffcanvas"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div
+              class="offcanvas offcanvas-end bg-dark text-white"
+              tabindex="-1"
+              id="navbarOffcanvas"
+              aria-labelledby="navbarOffcanvasLabel"
+            >
+              <div class="offcanvas-header">
+                <h5
+                  class="offcanvas-title text-white"
+                  id="navbarOffcanvasLabel"
+                >
+                  Menú
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body d-flex justify-content-center justify-content-md-end text-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-light" href="news.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Visítanos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="form.html">Asociarme</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </nav>
         <!-- Titulos principales -->
         <h2 class="subtitle-secondary text-center">Noticias</h2>
         <h1 class="title-secondary text-center">Jockey Club Rafaela</h1>
       </header>
 
-      <!-- Pack de Noticias 1-->
-      <section>
-        <div class="row noticias">
-          <!-- Primer Noticia -->
-          <div class="col-xl col-sm-12">
-            <article>
-              <div class="card" style="width: 18rem">
-                <img
-                  src="img\noticias\noticia-1.jpg"
-                  title="Jinetes en la competencia rafaelina"
-                  class="card-img-top"
-                  alt="Jinetes en la competencia rafaelina"
-                />
-                <div class="card-body">
-                  <h3 id="card-title">
-                    El Concurso Regional del Jockey fue un completo éxito
-                  </h3>
-                  <p id="card-text">
-                    Los jinetes que representaron a la institución rafaelina
-                    cumplieron con excelente labor en la competencia
-                  </p>
-                  <div class="btn-noticia">
-                    <a
-                      href="https://jockeyclubrafaela.com.ar/el-concurso-regional-del-jockey-club-fue-un-completo-exito/"
-                      class="btn btn-success"
-                      >Ver noticia</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <!-- Segunda Noticia -->
-          <div class="col-xl col-sm-12">
-            <article>
-              <div class="card" style="width: 18rem">
-                <img
-                  src="img\noticias\noticia-2.jpg"
-                  title="Niños jugando en el predio Hípico jockey club rafaela"
-                  class="card-img-top"
-                  alt="Niños jugando en el predio Hípico jockey club rafaela"
-                />
-                <div class="card-body">
-                  <h3 id="card-title">
-                    Día de la niñez en el Jockey: un festejo muy especial
-                  </h3>
-                  <p id="card-text">
-                    Cientos de socios se acercaron con sus familias a nuestro
-                    club para festejar el día de la niñez
-                  </p>
-                  <div class="btn-noticia">
-                    <a
-                      href="https://jockeyclubrafaela.com.ar/dia-de-la-ninez-en-el-jockey-un-festejo-muy-especial/"
-                      class="btn btn-success"
-                      >Ver noticia</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <!-- Tercer Noticia -->
-          <div class="col-xl col-sm-12">
-            <article>
-              <div class="card" style="width: 18rem">
-                <img
-                  src="img\noticias\noticia-3.jpg"
-                  class="card-img-top"
-                  title="Mujer cabalgando caballo"
-                  alt="Mujer cabalgando caballo"
-                />
-                <div class="card-body">
-                  <h3 id="card-title">
-                    Volvemos a la competencia, concurso Jockey Club Rafaela
-                  </h3>
-                  <p id="card-text">
-                    Se realizará un concurso de equitación donde participan
-                    jinetes de nuestra institución
-                  </p>
-                  <p></p>
-                  <div class="btn-noticia">
-                    <a
-                      href="https://jockeyclubrafaela.com.ar/volvemos-a-la-competencia-concurso-jockey-club-rafaela/"
-                      class="btn btn-success"
-                      >Ver noticia</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Pack de Noticias 2-->
-      <section>
-        <div class="row noticias">
-          <!-- Cuarta Noticia -->
-          <div class="col-xl col-sm-12">
-            <article>
-              <div class="card" style="width: 18rem">
-                <img
-                  src="img\noticias\noticia-4.jpg"
-                  title="Joven ayudando a anciano a cabalgar un caballo"
-                  class="card-img-top"
-                  alt="Joven ayudando a anciano a cabalgar un caballo"
-                />
-                <div class="card-body">
-                  <h3 id="card-title">Inaguración de Escuela de Salto</h3>
-                  <p id="card-text">
-                    Aprende a saltar en el Jockey Club Rafaela <br />¡Te Estamos
-                    Esperando!
-                  </p>
-                  <div class="btn-noticia">
-                    <a href="/register.html" class="btn btn-success"
-                      >Ver noticia</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <!-- Quinta Noticia -->
-          <div class="col-xl col-sm-12">
-            <article>
-              <div class="card" style="width: 18rem">
-                <img
-                  src="img\noticias\noticia-5.jpg"
-                  title="Profesor de tenis con sus alumnos en una cancha de tenis"
-                  class="card-img-top"
-                  alt="Profesor de tenis con sus alumnos en una cancha de tenis"
-                />
-                <div class="card-body">
-                  <h3 id="card-title">Encuentro de Escuelas de Tenis</h3>
-                  <p id="card-text">
-                    Se llevará a cabo el primer encuentro de escuela de tenis en
-                    las instalaciones del Jockey Club de Rafaela
-                  </p>
-                  <div class="btn-noticia">
-                    <a
-                      href="https://jockeyclubrafaela.com.ar/encuentro-de-escuelas-de-tenis/"
-                      class="btn btn-success"
-                      >Ver noticia</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <!-- Sexta Noticia -->
-          <div class="col-xl col-sm-12">
-            <article>
-              <div class="card" style="width: 18rem">
-                <img
-                  src="img\noticias\noticia-6.jpg"
-                  class="card-img-top"
-                  title="Maquinarias realizando mantenimiento en el predio Jockey Club Rafaela"
-                  alt="Maquinarias realizando mantenimiento en el predio Jockey Club Rafaela"
-                />
-                <div class="card-body">
-                  <h3 id="card-title">
-                    Tareas de reacondicionamiento Pista Central
-                  </h3>
-                  <p id="card-text">
-                    Se realizaron tareas de reacondicionamiento de bordes de la
-                    pista
-                  </p>
-                  <div class="btn-noticia">
-                    <a
-                      href="https://jockeyclubrafaela.com.ar/tareas-de-reacondicionamiento-pista-central/"
-                      class="btn btn-success"
-                      >Ver noticia</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
+      <!-- Noticias cargardas desde JSON -->
+      <section id="noticias">
       </section>
     </div>
-
     <!-- Footer -->
     <footer>
       <div class="container">
@@ -263,5 +120,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>

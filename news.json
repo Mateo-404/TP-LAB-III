@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "titulo": "RÉCORD DE ASISTENCIA  ",
+    "descripcion": "El club logró gran asistencia en el torneo de polo.",
+    "imagen": "img/noticias/1.webp",
+    "cuerpo": "El Jockey Club Rafaela ha establecido un nuevo récord de asistencia con miles de espectadores disfrutando de emocionantes partidos de polo bajo un ambiente festivo. Este logro refleja el creciente interés en el deporte ecuestre en la región, impulsando aún más la reputación del club como centro de eventos deportivos de alto nivel. La jornada estuvo marcada por partidos emocionantes, exhibiciones de habilidades ecuestres y la participación activa de la comunidad local, que celebró este hito histórico para el club.",
+    "fecha": "10/07/2024"
+  },
+  {
+    "id": 2,
+    "titulo": "PISTA DE ENTRENAMIENTO    ",
+    "descripcion": "Instalación mejora el rendimiento de jinetes y caballos.",
+    "imagen": "img/noticias/2.webp",
+    "cuerpo": "Con la inauguración de una nueva pista de entrenamiento, el Jockey Club Rafaela busca elevar el nivel competitivo de sus deportistas y asegurar el bienestar de los caballos durante sus rutinas de preparación. La instalación cuenta con tecnología de vanguardia y diseño ergonómico, proporcionando un entorno óptimo para el desarrollo físico y técnico de los equinos y jinetes. Esta iniciativa reafirma el compromiso del club con la excelencia en el deporte ecuestre y su constante búsqueda de innovación para mantenerse a la vanguardia en el ámbito deportivo.",
+    "fecha": "25/06/2024"
+  },
+  {
+    "id": 3,
+    "titulo": "EXITOSA GALA BENÉFICA    ",
+    "descripcion": "Evento recaudó fondos para la cultura ecuestre local.",
+    "imagen": "img/noticias/3.webp",
+    "cuerpo": "La gala benéfica organizada por el Jockey Club Rafaela fue un éxito rotundo, logrando recaudar fondos significativos para la preservación y el desarrollo sostenible del patrimonio ecuestre en la región. Con la participación de destacadas personalidades y miembros de la comunidad, el evento se destacó por su elegancia y compromiso con una causa noble. Los fondos obtenidos se destinarán a iniciativas que promuevan el cuidado de los caballos, la mejora de las instalaciones del club y la educación ecuestre, asegurando un legado duradero para las generaciones futuras.",
+    "fecha": "15/06/2024"
+  },
+  {
+    "id": 4,
+    "titulo": "CELEBRACIÓN DEL ANIVERSARIO",
+    "descripcion": "La institución cumple 100 años al servicio del deporte.",
+    "imagen": "img/noticias/4.webp",
+    "cuerpo": "El Jockey Club Rafaela celebró con orgullo su centenario, destacando su trayectoria de compromiso y excelencia en la promoción del deporte ecuestre en la comunidad local y más allá. Durante el evento conmemorativo, se rindió homenaje a los fundadores, socios y figuras clave que han contribuido al crecimiento y desarrollo del club a lo largo de los años. La celebración incluyó actividades deportivas, exposiciones históricas y reconocimientos especiales, subrayando el impacto positivo del club en la cultura deportiva y social de la región.",
+    "fecha": "20/05/2024"
+  },
+  {
+    "id": 5,
+    "titulo": "PREMIO A LA EXCELENCIA DEPORTIVA",
+    "descripcion": "Reconocimiento internacional al polo en Argentina.",
+    "imagen": "img/noticias/5.webp",
+    "cuerpo": "El Jockey Club Rafaela ha sido galardonado con el premio a la excelencia deportiva por su destacada contribución al desarrollo y la promoción del polo en Argentina, consolidando su posición como referente internacional en el ámbito ecuestre. Este reconocimiento celebra no solo los logros deportivos del club, sino también su impacto positivo en la comunidad y su papel como centro de formación y competición para jinetes de todas las edades. El premio refuerza el compromiso del club con la excelencia, la ética deportiva y el desarrollo sostenible en el deporte ecuestre.",
+    "fecha": "30/04/2024"
+  },
+  {
+    "id": 6,
+    "titulo": "TORNEO INTERNACIONAL DE SALTO",
+    "descripcion": "Competencia atrajo a jinetes de gran renombre mundial.",
+    "imagen": "img/noticias/6.webp",
+    "cuerpo": "El Jockey Club Rafaela ha sido anfitrión de un emocionante torneo internacional de salto, atrayendo a jinetes de élite de diferentes partes del mundo para competir en un ambiente de camaradería y alto nivel deportivo. La competencia destacó por la habilidad técnica y la destreza de los participantes, quienes desafiaron obstáculos de alto nivel con sus habilidades ecuestres excepcionales. El evento no solo fortaleció los lazos internacionales en el ámbito ecuestre, sino que también promovió el intercambio cultural y la apreciación mutua entre los participantes y la comunidad local.",
+    "fecha": "10/04/2024"
+  },
+  {
+    "id": 7,
+    "titulo": "NUEVA SEDE ADMINISTRATIVA",
+    "descripcion": "Instalación mejora la gestión interna del club local.",
+    "imagen": "img/noticias/7.webp",
+    "cuerpo": "Con la inauguración de su nueva sede administrativa, el Jockey Club Rafaela busca optimizar sus procesos internos y fortalecer su capacidad para servir mejor a la comunidad ecuestre local. La instalación cuenta con tecnología avanzada y espacios diseñados para facilitar la administración eficiente de eventos, programas deportivos y actividades comunitarias. Este hito marca un paso significativo hacia el crecimiento y la modernización del club, garantizando su capacidad para seguir siendo un líder en el deporte ecuestre y un centro de excelencia para todos sus miembros y visitantes.",
+    "fecha": "15/03/2024"
+  },
+  {
+    "id": 8,
+    "titulo": "ÉXITO DE LA ESCUELA DE EQUIDAD",
+    "descripcion": "Alumnos logran destacados resultados en nacionales.",
+    "imagen": "img/noticias/8.webp",
+    "cuerpo": "La escuela de equitación del Jockey Club Rafaela celebra un nuevo éxito con sus alumnos obteniendo destacados resultados en competiciones juveniles a nivel nacional, demostrando el compromiso del club con el desarrollo de talentos jóvenes en el deporte ecuestre. Los estudiantes han demostrado habilidades excepcionales y un fuerte espíritu competitivo, reflejando la dedicación de sus entrenadores y el apoyo continuo de la comunidad. Este logro subraya la importancia de la educación ecuestre en el desarrollo integral de los jóvenes, preparándolos no solo como atletas, sino también como líderes y ciudadanos responsables.",
+    "fecha": "28/02/2024"
+  },
+  {
+    "id": 9,
+    "titulo": "PROGRAMA DE INCLUSIÓN SOCIAL",
+    "descripcion": "Iniciativa integra a jóvenes de sectores vulnerables.",
+    "imagen": "img/noticias/9.webp",
+    "cuerpo": "El Jockey Club Rafaela ha lanzado un innovador programa de inclusión social a través del deporte ecuestre, ofreciendo oportunidades de aprendizaje y desarrollo personal a jóvenes de sectores vulnerables de la comunidad. El programa no solo fomenta la equidad y la diversidad en el deporte, sino que también promueve valores como la disciplina, el trabajo en equipo y el respeto mutuo. A través de actividades educativas y entrenamientos especializados, el club aspira a empoderar a los participantes y transformar positivamente sus vidas, fortaleciendo.",
+    "fecha": "10/02/2024"
+  },
+  {
+    "id": 10,
+    "titulo": "ÉXITO DEL EQUIPO JUVENIL EN TORNEO",
+    "descripcion": "Jinetes jóvenes del club brillan en competencia.",
+    "imagen": "img/noticias/10.webp",
+    "cuerpo": "El equipo juvenil del Jockey Club Rafaela ha logrado un notable éxito en el último torneo nacional de equitación, demostrando su talento y determinación en la pista. Los jóvenes jinetes del club destacaron en diversas disciplinas, obteniendo múltiples medallas y reconocimientos por su desempeño excepcional. Este logro no solo enaltece el compromiso del club con el desarrollo deportivo de sus miembros más jóvenes, sino que también fortalece su reputación como una cantera de talentos en el ámbito ecuestre nacional.",
+    "fecha": "20/01/2024"
+  },
+  {
+    "id": 11,
+    "titulo": "EXPANSIÓN DE INSTALACIONES DEL CLUB",
+    "descripcion": "Proyecto incluirá nuevas pistas y mejoras relevantes.",
+    "imagen": "img/noticias/11.webp",
+    "cuerpo": "El Jockey Club Rafaela ha revelado planes ambiciosos para expandir sus instalaciones, con la incorporación de nuevas pistas de entrenamiento y mejoras significativas en la infraestructura existente. Este proyecto busca satisfacer la creciente demanda de actividades deportivas y eventos ecuestres de alto nivel, posicionando al club como un destino privilegiado para jinetes y entusiastas del deporte ecuestre en la región. La expansión también incluirá la implementación de tecnología avanzada y prácticas sostenibles para asegurar la eficiencia operativa y el bienestar de los caballos.",
+    "fecha": "15/01/2024"
+  },
+  {
+    "id": 12,
+    "titulo": "MUSEO DEL POLO JOCKEY CLUB RAFAELA",
+    "descripcion": "Nuevo espacio dedicado a la historia del polo local.",
+    "imagen": "img/noticias/12.webp",
+    "cuerpo": "El Jockey Club Rafaela ha inaugurado un museo dedicado al polo, ofreciendo a visitantes y miembros una mirada profunda a la rica historia y cultura de este deporte en Argentina. El museo alberga una impresionante colección de artefactos históricos, trofeos emblemáticos y exhibiciones interactivas que destacan los logros y la evolución del polo a lo largo de los años. Esta iniciativa no solo enriquece la experiencia cultural de la comunidad ecuestre local, sino que también fortalece los lazos entre generaciones de aficionados al deporte.",
+    "fecha": "10/01/2024"
+  },
+  {
+    "id": 13,
+    "titulo": "CLÍNICA DE DOMA CLÁSICA DEL CLUB",
+    "descripcion": "Expertos impartirán conocimientos en doma ecuestre.",
+    "imagen": "img/noticias/13.webp",
+    "cuerpo": "El Jockey Club Rafaela se prepara para recibir a expertos internacionales en una clínica especializada de doma clásica, donde se compartirán conocimientos avanzados y técnicas especializadas para mejorar el rendimiento de jinetes y caballos. La clínica reunirá a participantes de diferentes partes del país interesados en perfeccionar sus habilidades en esta disciplina fundamental del deporte ecuestre. Este evento refuerza el compromiso del club con la formación continua y el desarrollo profesional de su comunidad ecuestre, promoviendo estándares de excelencia en cada nivel de competencia.",
+    "fecha": "05/01/2024"
+  },
+  {
+    "id": 14,
+    "titulo": "TORNEO REGIONAL DE TALENTOS JUVENILES",
+    "descripcion": "Competición busca descubrir nuevas promesas locales.",
+    "imagen": "img/noticias/14.webp",
+    "cuerpo": "El Jockey Club Rafaela ha lanzado un torneo regional dedicado a jóvenes talentos del deporte ecuestre, ofreciendo una plataforma para que nuevos jinetes demuestren su habilidad y potencial en la pista. La competición abarcará diferentes categorías y disciplinas, proporcionando una experiencia invaluable para los participantes y espectadores por igual. Este evento no solo busca descubrir futuras estrellas en el ámbito ecuestre, sino también promover la pasión por el deporte y fomentar una cultura de excelencia y competitividad entre los jóvenes.",
+    "fecha": "02/01/2024"
+  },
+  {
+    "id": 15,
+    "titulo": "JORNADA DE PUERTAS ABIERTAS DEL CLUB",
+    "descripcion": "Evento invitó a la comunidad a conocer el club.",
+    "imagen": "img/noticias/15.webp",
+    "cuerpo": "El Jockey Club Rafaela abrió sus puertas a la comunidad en una jornada especial dedicada a conocer las instalaciones, programas y actividades que ofrece el club. Los visitantes pudieron participar en demostraciones ecuestres, recorridos guiados por las instalaciones y sesiones informativas sobre los diferentes programas deportivos y educativos disponibles. Esta iniciativa refuerza el compromiso del club con la transparencia, la participación comunitaria y el fortalecimiento de la relación con sus miembros y la comunidad en general.",
+    "fecha": "30/12/2023"
+  },
+  {
+    "id": 16,
+    "titulo": "CAMPEONATO NACIONAL DE POLO DEL CLUB",
+    "descripcion": "Equipo del club compite por el título en el torneo.",
+    "imagen": "img/noticias/16.webp",
+    "cuerpo": "El equipo del Jockey Club Rafaela ha demostrado su destreza y determinación al participar en el campeonato nacional de polo, compitiendo contra algunos de los mejores equipos del país por el codiciado título. Los jinetes del club han mostrado un desempeño excepcional en cada partido, destacando por su habilidad táctica y competitividad. Este evento no solo fortalece la reputación competitiva del club, sino que también promueve el espíritu deportivo y la camaradería entre los participantes y la comunidad ecuestre.",
+    "fecha": "20/12/2023"
+  },
+  {
+    "id": 17,
+    "titulo": "CAMPAÑA DE BIENESTAR EQUINO DEL CLUB",
+    "descripcion": "Iniciativa busca educar sobre el cuidado equino.",
+    "imagen": "img/noticias/17.webp",
+    "cuerpo": "El Jockey Club Rafaela ha lanzado una campaña integral de concienciación sobre el bienestar equino, destacando la importancia del cuidado ético y respetuoso hacia los caballos en todas las actividades ecuestres. La campaña incluye talleres educativos, demostraciones prácticas y recursos informativos destinados a promover prácticas responsables entre los miembros del club y la comunidad en general. Esta iniciativa refuerza el compromiso del club con el bienestar animal y la ética deportiva, garantizando condiciones óptimas para todos los equinos involucrados en sus actividades.",
+    "fecha": "10/12/2023"
+  },
+  {
+    "id": 18,
+    "titulo": "EXHIBICIÓN DE CABALLOS DE RAZA DEL CLUB",
+    "descripcion": "Evento atrajo a criadores y entusiastas de la región.",
+    "imagen": "img/noticias/18.webp",
+    "cuerpo": "El Jockey Club Rafaela ha organizado una impresionante exhibición de caballos de raza, presentando ejemplares de alta calidad y pedigree a criadores y entusiastas de caballos de toda la región. El evento destacó por la belleza y elegancia de los caballos participantes, así como por las oportunidades de networking y comerciales para los asistentes interesados en la cría equina. Esta iniciativa refuerza el papel del club como un centro de excelencia en la promoción y exhibición de los mejores ejemplares de la región.",
+    "fecha": "05/12/2023"
+  },
+  {
+    "id": 19,
+    "titulo": "TORNEO DE EQUIDAD ADAPTADA DEL CLUB",
+    "descripcion": "Competición inclusiva destaca el talento de participantes.",
+    "imagen": "img/noticias/19.webp",
+    "cuerpo": "El Jockey Club Rafaela ha sido sede de un emocionante torneo de equitación adaptada, dedicado a promover la inclusión y celebrar el talento de jinetes con habilidades diferentes. La competición atrajo a participantes de toda la región, quienes demostraron habilidades excepcionales y determinación en cada prueba. Este evento no solo subraya el compromiso del club con la equidad y la accesibilidad en el deporte ecuestre, sino que también promueve un mensaje poderoso de superación personal y resiliencia.",
+    "fecha": "28/11/2023"
+  },
+  {
+    "id": 20,
+    "titulo": "CLÁSICO DE POLO A BENEFICIO DEL CLUB",
+    "descripcion": "Evento recaudó fondos para instituciones de beneficencia.",
+    "imagen": "img/noticias/20.webp",
+    "cuerpo": "El Jockey Club Rafaela ha organizado un clásico de polo benéfico, reuniendo a destacados jugadores y personalidades para recaudar fondos destinados a instituciones locales de beneficencia. El evento combinó la emoción del deporte ecuestre con la generosidad de la comunidad, proporcionando una plataforma para apoyar causas significativas y fortalecer lazos solidarios entre los participantes y patrocinadores. Esta iniciativa refleja el compromiso del club con la responsabilidad social y el impacto positivo en la comunidad a través del deporte.",
+    "fecha": "15/11/2023"
+  },
+  {
+    "id": 21,
+    "titulo": "DÍA DE LA NIÑEZ EN EL JOCKEY DEL CLUB",
+    "descripcion": "Cientos de socios se acercaron a festejar el día.",
+    "imagen": "img/noticias/21.webp",
+    "cuerpo": "El Jockey Club Rafaela ha organizado un clásico de polo benéfico, reuniendo a destacados jugadores y personalidades para recaudar fondos destinados a instituciones locales de beneficencia. El evento combinó la emoción del deporte ecuestre con la generosidad de la comunidad, proporcionando una plataforma para apoyar causas significativas y fortalecer lazos solidarios entre los participantes y patrocinadores. Esta iniciativa refleja el compromiso del club con la responsabilidad social y el impacto positivo en la comunidad a través del deporte.",
+    "fecha": "13/01/2023"
+  }
+]

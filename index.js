@@ -50,17 +50,23 @@ function comprobarFormulario() {
     error += "- FALTA ACEPTAR TERMINOS Y CONDICIONES \n";
     flag = false;
   }
-
+  const enviarBtn = document.getElementById("enviar_form").querySelector("button");
   // Enviar formulario
   if (flag) {
+    enviarBtn.classList.remove("error");
+    enviarBtn.classList.add("success");
     alert("¡FORMULARIO ENVIADO CON ÉXITO!");
     document.getElementById("formulario").submit();
-  } else alert(error);
+  } else {
+    enviarBtn.classList.remove("success");
+    enviarBtn.classList.add("error");
+    alert(error);
+  };
 }
 
 function esMenorEdad(fecha_nacimiento) {
   const anios =
-  //Año actual - año de nacimiento
+    //Año actual - año de nacimiento
     new Date().getFullYear() - new Date(fecha_nacimiento).getFullYear();
   return (
     anios < 18 ||
@@ -76,7 +82,7 @@ async function mostrarNoticias() {
   try {
     const response = await fetch('news.json'); // Cargar el archivo JSON
     const noticias = await response.json();   // Convertir respuesta a JSON
-    
+
     const noticiasContainer = document.getElementById('noticias'); // Contenedor donde se agregarán las noticias
 
     let Contador = 0; // Contador de tarjetas creadas

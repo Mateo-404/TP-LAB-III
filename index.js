@@ -53,14 +53,15 @@ function comprobarFormulario() {
   const enviarBtn = document.getElementById("enviar_form").querySelector("button");
   // Enviar formulario
   if (flag) {
-    enviarBtn.classList.remove("error");
-    enviarBtn.classList.add("success");
     alert("¡FORMULARIO ENVIADO CON ÉXITO!");
     document.getElementById("formulario").submit();
   } else {
-    enviarBtn.classList.remove("success");
     enviarBtn.classList.add("error");
     alert(error);
+    // Luego de 3 segundos, se elimina la clase de error
+    setTimeout(function() {
+      enviarBtn.classList.remove("error");
+    }, 3000);
   };
 }
 

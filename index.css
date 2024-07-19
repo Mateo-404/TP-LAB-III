@@ -49,7 +49,7 @@ body {
   position: relative;
 }
 .navbar-nav .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -2px; /* Alinea la línea justo debajo del texto */
@@ -105,7 +105,7 @@ body {
   object-fit: cover; /* Ajustar imagen dentro de su contenedor */
 }
 /* Animacion 2 */
-.card:hover {
+.noticias .card:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
 }
@@ -145,7 +145,6 @@ footer iframe {
   width: 100%;
 }
 
-
 /* ---------------- SECCIONES PARTICULARES / Sections ---------------- */
 
 /* <-- Home / Index -->*/
@@ -155,7 +154,7 @@ footer iframe {
 /* Animacion 3 */
 .container-home img {
   filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(80deg)
-  brightness(200%) contrast(100%);
+    brightness(200%) contrast(100%);
   transition: transform 0.5s ease;
   width: 6%;
 }
@@ -205,7 +204,7 @@ footer iframe {
 }
 .introduccion-about img {
   filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(80deg)
-  brightness(200%) contrast(100%);
+    brightness(200%) contrast(100%);
   transition: transform 0.5s ease;
   width: 40%;
 }
@@ -245,7 +244,7 @@ footer iframe {
   padding: 1.3% 2% 0.7% 2% !important;
 }
 
-.input{
+.input {
   margin-bottom: 3%;
 }
 .container-formulario label {
@@ -270,34 +269,24 @@ input[type="checkbox"]:checked {
   border-color: green !important;
 }
 
-/* TEST */
-
-/* Animación de éxito */
-@keyframes successAnimation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Estilo inicial del botón */
-.btn-submit {
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
+/* Animacion 7 */
 /* Animación de error (shake) */
 @keyframes shakeError {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0);
   }
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     transform: translateX(-10px);
   }
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     transform: translateX(10px);
   }
 }
@@ -308,13 +297,6 @@ input[type="checkbox"]:checked {
   animation: shakeError 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
-
-/* Estilo cuando se envía correctamente */
-.success {
-  background-color: green;
-  animation: successAnimation 0.5s ease-in-out;
-}
-
 /*<-- Contacto / Contact -->*/
 .contact-card .col {
   margin: 3% 0 3% 0;
@@ -323,6 +305,9 @@ input[type="checkbox"]:checked {
 }
 .contact-card img {
   padding: 6%;
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor manteniendo la relación de aspecto */
 }
 .contact-card a {
   display: flex;
@@ -334,6 +319,17 @@ input[type="checkbox"]:checked {
   font-weight: bolder;
   text-align: center;
 }
+
+.contact-card .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+/* Animación 8 Rotación */
+.contact-card .card:hover {
+  transform: rotate(3deg); /* Rotación ligera al pasar el mouse */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+  background-color: #ffc107 !important; /* Cambia a un color amarillo brillante */
+}
+
 
 /* <-- Formulario enviado / Form_complete --> */
 #body-form-complete .title-secondary {
@@ -373,7 +369,6 @@ input[type="checkbox"]:checked {
   width: 50%;
 }
 
-
 /* <-- Animaciones con Keyframes -->*/
 /* Animacion 5 FadeIn */
 .fadeIn {
@@ -381,29 +376,89 @@ input[type="checkbox"]:checked {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Animacion 6 SlideITop */
 @keyframes slideInTop {
-  from { transform: translateY(100%); }
-  to { transform: translateY(0); }
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}  
+
+/* Animación de 9 jello */
+@keyframes jello {
+  0% {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75) rotate(-10deg);
+  }
+  40% {
+    transform: scale(0.75, 1.25) rotate(10deg);
+  }
+  50% {
+    transform: scale(1.15, 0.85) rotate(-8deg);
+  }
+  65% {
+    transform: scale(0.95, 1.05) rotate(5deg);
+  }
+  75% {
+    transform: scale(1.05, 0.95) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1, 1) rotate(0deg);
+  }
 }
 
+.jello {
+  animation: jello 0.8s both;
+}
+
+/* Animación 10 bounceInUp */
+@keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-30%);
+  }
+  80% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounceInUp {
+  animation: bounceInUp 0.8s ease-out;
+}
 
 
 
 /* ---------------- MEDIA QUERIES ---------------- */
 @media (max-width: 800px) {
-  .container-formulario .row{
+  .container-formulario .row {
     margin-top: 8%;
-  }
-  
-}
+  }  
+}  
 @media (max-width: 1000px) {
   footer {
     margin-top: 100%;
-  }
-}
+  }  
+}  
+
+
+
 

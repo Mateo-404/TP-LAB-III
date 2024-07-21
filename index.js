@@ -129,6 +129,10 @@ async function mostrarNoticias() {
 
       const enlace = document.createElement('a');
       enlace.classList.add('btn', 'btn-success');
+      enlace.href = '#'; // Ajusta el atributo href según sea necesario
+      enlace.onclick = () => cargarNoticia(noticia.id);
+      enlace.dataset.bsToggle = 'modal';
+      enlace.dataset.bsTarget = 'Noticia-ampliada';
       enlace.textContent = 'Ver noticia';
 
       // Construir la estructura de la tarjeta
@@ -152,9 +156,62 @@ async function mostrarNoticias() {
   }
 }
 
-
 // Verificar si estamos en la página 'news.html' antes de cargar las noticias
 if (window.location.pathname.includes('news.html')) {
   mostrarNoticias().catch(error => console.error('Error al mostrar las noticias:', error)); // Llamar a la función para cargar las noticias
 }
 
+// Cargar Noticia en específico
+async function cargarNoticia(id) {
+  try {
+    const response = await fetch('news.json'); // Cargar el archivo JSON
+    const noticias = await response.json();   // Convertir respuesta a JSON
+
+    const header = document.getElementById('modal-title'); // Contenedor donde se agregará el título del modal
+    const body = document.getElementById('modal-body'); // Contenedor donde se agregará el cuerpo del modal
+
+    // Limpiar contenido anterior
+    if (header) header.textContent = '';
+    if (body) body.textContent = '';
+
+    const noticia = noticias.find(noticia => noticia.id === id); // Buscar noticia por ID
+
+    if (noticia) {
+      // Mostrar título y cuerpo de la noticia en el modal
+      const titulo = document.createElement('h3');
+      titulo.id = 'modal-titulo';
+      titulo.textContent = noticia.titulo;
+
+      const subtitulo = document.createElement('h4');
+      subtitulo.textContent = noticia.descripcion;
+      subtitulo.id = 'modal-subtitulo';
+
+      const imagen = document.createElement('img');
+      imagen.src = noticia.imagen;
+      imagen.alt = noticia.titulo;
+      imagen.title = noticia.titulo;
+      imagen.classList.add('img-fluid');
+
+      const parrafo = document.createElement('p');
+      parrafo.textContent = noticia.cuerpo;
+      parrafo.id = 'modal-parrafo';
+
+      const fecha = document.createElement('p');
+      fecha.textContent = noticia.fecha;
+      fecha.id = 'modal-fecha';
+
+      header.appendChild(imagen);
+      header.appendChild(titulo);
+      header.appendChild(subtitulo);
+
+      body.appendChild(parrafo);
+      body.appendChild(fecha);
+      // Mostrar el modal usando Bootstrap
+      var myModal = new bootstrap.Modal(document.getElementById('Noticia-ampliada'));
+      myModal.show();
+    }
+
+  } catch (error) {
+    console.error('Error al cargar la noticia:', error);
+  }
+}

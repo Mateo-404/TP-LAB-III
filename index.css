@@ -190,12 +190,12 @@ footer iframe {
 }
 
 /* Cartas / Cards */
-.card-title {
+.card-title, #modal-titulo{
   font-family: "Oswald", sans-serif;
   font-size: 150%;
   text-align: center;
 }
-.card-text {
+.card-text, #modal-text {
   font-family: "Roboto", sans-serif;
   font-size: 99%;
   text-align: center;

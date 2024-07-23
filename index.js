@@ -79,55 +79,56 @@ function esMenorEdad(fecha_nacimiento) {
 
 // <-- Cargar Noticias -->
 // Función para cargar y mostrar las noticias desde el JSON
+let noticias = null; //? Hago la variable aparte para no hacer varios fetch
 async function mostrarNoticias() {
   try {
     const response = await fetch('news.json'); // Cargar el archivo JSON
-    const noticias = await response.json();   // Convertir respuesta a JSON
+    noticias = await response.json();   // Convertir respuesta a JSON
 
     const noticiasContainer = document.getElementById('noticias'); // Contenedor donde se agregarán las noticias
 
     let Contador = 0; // Contador de tarjetas creadas
-    let row = null; // Variable para el div row actual
 
+    let row, col, article, card, img, cardBody, titulo, descripcion, btnNoticia, enlace;
     noticias.forEach(noticia => {
       if (Contador % 12 === 0) {
-        // Crear una nueva fila cada 12 tarjetas
+        // Crear una nueva fila cada 12 Tarjetas
         row = document.createElement('div');
         row.classList.add('row', 'noticias');
         noticiasContainer.appendChild(row);
       }
 
       // Crear Carta para cada Noticia
-      const col = document.createElement('div');
+      col = document.createElement('div');
       col.classList.add('col');
 
-      const article = document.createElement('article');
+      article = document.createElement('article');
 
-      const card = document.createElement('div');
+      card = document.createElement('div');
       card.classList.add('card');
       card.style.width = '18rem';
 
-      const img = document.createElement('img');
+      img = document.createElement('img');
       img.src = noticia.imagen;
       img.classList.add('card-img-top');
       img.alt = noticia.titulo;
       img.title = noticia.titulo;
 
-      const cardBody = document.createElement('div');
+      cardBody = document.createElement('div');
       cardBody.classList.add('card-body');
 
-      const titulo = document.createElement('h3');
+      titulo = document.createElement('h3');
       titulo.textContent = noticia.titulo;
       titulo.classList.add('card-title'); // Añadir clase 'card-title' para el título
 
-      const descripcion = document.createElement('p');
+      descripcion = document.createElement('p');
       descripcion.textContent = noticia.descripcion;
       descripcion.classList.add('card-text'); // Añadir clase 'collapse' para la descripción inicialmente oculta
 
-      const btnNoticia = document.createElement('div');
+      btnNoticia = document.createElement('div');
       btnNoticia.classList.add('btn-noticia');
 
-      const enlace = document.createElement('a');
+      enlace = document.createElement('a');
       enlace.classList.add('btn', 'btn-success');
       enlace.href = '#'; // Ajusta el atributo href según sea necesario
       enlace.onclick = () => cargarNoticia(noticia.id);
@@ -164,9 +165,6 @@ if (window.location.pathname.includes('news.html')) {
 // Cargar Noticia en específico
 async function cargarNoticia(id) {
   try {
-    const response = await fetch('news.json'); // Cargar el archivo JSON
-    const noticias = await response.json();   // Convertir respuesta a JSON
-
     const header = document.getElementById('modal-title'); // Contenedor donde se agregará el título del modal
     const body = document.getElementById('modal-body'); // Contenedor donde se agregará el cuerpo del modal
 
